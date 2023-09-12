@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Norsebold';
+    src: url("../fonts/Norse-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-side {
+    width: 35%;
+    height: 100%;
+    background-image: url("../assets/leaf_bg.avif");
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 23%;
+}
+
+#title-bar {
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 16.8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-img {
+    height: 140px;
+    width: 105px;
+}
+
+#title-text {
+    padding-top: 30px;
+    font-family: "Norsebold";
+    color: white;
+    font-size: 100px;
+}
+
+#right-side {
+    
+    font-family: sans-serif;
+
+    width: 65%;
+    height: 100%;
+    background-color: rgb(244, 244, 244);
+    padding-top: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#top-right {
+    height: 18%;
+    margin-bottom: 5%;
+}
+
+.top-text {
+    padding-left: 60px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: normal;
+}
+
+#middle-right {
+    background-color: white;
+    padding-left: 60px;
+    box-shadow: 0 6px 6px rgb(222, 222, 222);
+    height: 30%;
+    width: 100%;
+}
+
+#form-div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+}
+
+#right-inputs, #left-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+/* hide phone input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    display: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input-label {
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.input {
+    width: 80%;
+    padding: 4px 8px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.input:focus {
+    box-shadow: 4px 4px 6px rgb(222, 222, 222);
+}
+
+.error {
+    border-color: red;
+}
+
+#pass-match {
+    display: contents;
+}
+
+.wrong-pass {
+    color: red;
+}
+
+.hide {
+    color: transparent;
+}
+
+#bottom-right {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+#btn {
+    height: 50px;
+    width: 240px;
+    border-radius: 7px;
+    background-color: #596D48;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(244, 244, 244);
+    border: 0;
+    box-shadow: 6px 6px 6px rgb(222, 222, 222);
+    transition: 0.2s;
+}
+
+#btn:hover {
+    background-color: #829e6a;
+    cursor: pointer;
+}
+
+#btn:active {
+    background-color: #c8f2a3;
+    color:black;
+}
+
+#bottom-text-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#bottom-text {
+    font-size: 20px;
+}
+
+#login-a:visited, #login-a:link {
+    padding-left: 2px;
+    color:#596D48;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
