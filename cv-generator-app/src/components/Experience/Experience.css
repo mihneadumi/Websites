@@ -1,0 +1,112 @@
+
+#add-info {
+    background-color: #f2f7ff82;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    color: #9D71E8;
+
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    box-shadow: inset 0 0 0 white;
+    transition: 0.3s;
+}
+
+#add-info:hover {
+    box-shadow: inset 0 -100px 0 #9D71E8;
+    color: white;
+}
+
+#add-info:active {
+    box-shadow: inset 0 -100px 0 #BE99FF
+}
+
+#experience-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+#item-div {
+    background-color: rgba(255, 255, 255, 0.557);
+    padding: 20px;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) auto;
+    gap: 20px;
+}
+
+#item-div > * {
+    flex: 1 1 80px;
+}
+
+#item-div > input {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    
+    padding: 5px;
+    color: #9D71E8;
+    background-color: #C9DCFF;
+    border: none;
+}
+
+#item-div > textarea {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    width: 100%;
+    color: #9D71E8;
+    background-color: #C9DCFF;
+    border: none;
+    resize: none;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:last-child, .item:nth-child(5) {
+    grid-column: 1 / span 2;
+}
+
+#item-div > input::placeholder, #item-div > textarea::placeholder {
+    color: #BE99FF;
+    opacity: 0.5;
+}
+
+#del-div {
+    display: flex;
+    justify-content: start;
+    color: transparent;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#del-div:hover {
+    color: red;
+}
+
+#del-button {
+    pointer-events: auto;
+    color: black;
+    cursor: pointer;    
+    padding: 2px 4px 0 0;
+    transition: 0.3s;
+}
+
+#del-button:hover {
+    color: red;
+}

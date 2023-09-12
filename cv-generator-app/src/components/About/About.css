@@ -1,0 +1,61 @@
+
+#about-form {
+    background-color: rgba(255, 255, 255, 0.557);
+    padding: 20px;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) auto;
+    gap: 20px;
+}
+
+#input-form > * {
+    flex: 1 1 80px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-div > input::placeholder, .input-div > textarea::placeholder {
+    color: #BE99FF;
+    opacity: 0.5;
+}
+
+.input-div:last-child {
+    grid-column: 1 / span 2;
+}
+
+.input-div > label {
+    color: #B2C9FF;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.input-div > input {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    
+    padding: 5px;
+    color: #9D71E8;
+    background-color: #C9DCFF;
+    border: none;
+}
+
+.input-div > textarea {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    width: 100%;
+
+    color: #9D71E8;
+    background-color: #C9DCFF;
+    border: none;
+    resize: none;
+}

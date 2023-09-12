@@ -1,0 +1,44 @@
+
+
+#nav-bar {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-button {
+    height: 50px;
+    width: 50px;
+    min-width: 32px;
+    min-height: 32px;
+    border: 6px solid #F2F7FF;
+    color: #F2F7FF;
+    border-radius: 64px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    color: #BE99FF;
+    border-color: #BE99FF;
+    border-radius: 10px;
+}
+
+.nav-button:active {
+    border-radius: 64px;
+}
+
+#nav-hidden {
+    color:transparent;
+    cursor: default;
+    border-color: transparent;
+}
+
+#nav-name {
+    font-size: 40px;
+    color: #F2F7FF;
+}
