@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Phosphate',sans-serif;
+}
+
+body {
+    background-color: #22577A;
+    height: 100%;
+    bottom: 0;
+}
+
+header {
+    color: #38A3A5;
+    height: 5vh;
+    padding:0 1vw 0 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > section {
+    height: 4vh;
+    width: 12vw;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    font-size: 1.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.header-button:link, .header-button:visited {
+    text-decoration: none;
+    color: #38A3A5;
+}
+
+.header-button:hover {
+    box-shadow: inset 150px 0 0 0 #38A3A5;
+    color: white;
+}
+
+main {
+    background-color: #38A3A5;
+    padding: 10vh 0 10vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main.add-main{
+    height: 65vh;
+}
+
+.item-list,.inputs {
+    background-color: #80ed99c8;
+    width: 35vw;
+    height: 65vh;
+    border-color: rgba(255, 255, 255, 0.701);
+    border-style: solid;
+    border-width: 5px 15px 2px 2px;
+    box-shadow: 10px 10px 0 #C7F9CC;
+
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2.div-title {
+    color: #C7F9CC;
+    font-size: 5vh;
+    letter-spacing: 0.1vw;
+}
+
+#todo-list {
+    overflow: scroll;
+    width: 80%;
+    margin-bottom: 5vh;
+    margin-top: 5px;
+    border: none;
+}
+
+#todo-list::-webkit-scrollbar { 
+    display: none;
+}
+
+.search-bar {
+    width: 80%;
+    font-size: 100%;
+    height: 3vh;
+    padding-left: 5px;
+    letter-spacing: 2px;
+    color:#22577A;
+    background-color: #C7F9CC;
+    border: none;
+}
+
+.item {
+    transition: 0.5s;
+}
+
+.item:hover {
+    content: "Edit Task";
+}
+
+
+.item-content {
+    width: 95%;
+    cursor: pointer;
+}
+
+.item-header > h4 {
+    color:#80ed99;
+    letter-spacing: 0.2vw;
+    font-size: 30px;
+}
+
+.item-header > h4.item-date {
+    font-size: 20px;
+}
+
+.item {
+    padding: 0 2% 0 2%;
+    margin-top: 5px;
+    background-color: #C7F9CC;
+    color:#22577A;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.item:hover {
+    background-color: #38A3A5;
+}
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+
+.item > i {
+    transition: 0.3s;
+}
+
+.item > i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+div.inputs {
+    height: 35vh;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+
+section.input > h3{
+    letter-spacing: 3px;
+    color: #C7F9CC;
+}
+
+div.small-inputs {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+div.small-inputs > section.input {
+    margin:  0 1vw 0 1vw ;
+}
+
+section.input > input, textarea  {
+    padding: 3px 0 0 3px ;
+    font-family: 'Arial',sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+div.big-input {
+    width: 20vw;
+    height: 5vh;
+}
+
+section.input > textarea {
+    height: 5vh;
+    width: 20vw;
+    resize: none;
+}
+
+div.inputs > #submit {
+    font-size: 1.5vw;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    color: #38A3A5;
+    box-shadow: inset -11vw 0 0 0 #C7F9CC;
+    transition: 0.5s;
+}
+
+div.inputs > #submit:hover{
+    box-shadow: inset 11vw 0 0 0 #38A3A5;
+    color: #C7F9CC;
+}
+
+.footer{
+    color: #38A3A5;
+    letter-spacing: 0.1vw;
+    height: 10vh;
+    width: 100vw;
+    padding-left: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    column-gap: 15vw;
+    position: fixed;
+    background-color:#22577A;
+    bottom: 0;
+}
+.filler-links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-right: 5vw;
+}
+/*# sourceMappingURL=index.7af011d9.css.map */

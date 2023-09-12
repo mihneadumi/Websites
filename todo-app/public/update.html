@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Update Task</title>
+</head>
+<body>
+    <header>
+        <h1>ToDo App</h1>
+        <section>
+            <a href="add.html" class="header-button">Add</a>
+            <a href="index.html" class="header-button">List</a>
+        </section>
+    </header>
+    <main class="add-main">
+        <div class="inputs">
+            <h2 class="div-title">Update Task</h2>
+            <div class="small-inputs">
+                <section class="input">
+                    <h3>Name</h3>
+                    <input id="name">
+                </section>
+                <section class="input">
+                    <h3>Location</h3>
+                    <input id="location">
+                </section>
+                <section class="input">
+                    <h3>Date</h3>
+                    <input type="date" id="date" name="todo-date" value="2023-08-11" min="2023-01-01" max="2026-12-31" />
+                </section>
+            </div>
+            <div class="big-input">
+                <section class="input">
+                    <h3>Todo</h3>
+                    <textarea id="todo-text" name="todo-text" rows="3" cols="50"></textarea>
+                </section>
+            </div>
+            <button id="submit">Update</button>
+        </div>
+    </main>
+    <footer class = "footer">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quia totam, possimus facilis pariatur, ipsam odio dignissimos cupiditate ab, at accusamus sapiente. Omnis incidunt excepturi a id dolorem eaque possimus.</p>
+        </div>
+        <div class="filler-links">
+          <a href ='filler-link'>link1</a>
+          <a href ='filler-link'>link2</a>
+          <a href ='filler-link'>link3</a>
+        </div>
+        <div class = "filler-links">
+          <a href ='filler-link'>link4</a>
+          <a href ='filler-link'>link5</a>
+          <a href ='filler-link'>link6</a>
+        </div>
+      </footer>
+      <script type="module" src="update_script.js"></script>
+</body>
+</html>
